@@ -264,7 +264,8 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 0.75em;
+    font-size: 1em;
+    justify-content: space-around;
 }
 
 .toolbar .button {
