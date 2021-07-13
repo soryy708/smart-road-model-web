@@ -273,6 +273,17 @@ p {
     flex-direction: column;
 }
 
+.toolbar .button.active {
+    background-color: #1c5eec;
+    color: #fff;
+}
+
+.toolbar .button.active:hover,
+.toolbar .button.active:active {
+    background-color: #1c5eec;
+    color: #fff;
+}
+
 .toolbar .button .icon {
     margin-left: 0;
 }
@@ -313,5 +324,24 @@ p {
     }
     to {
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media print {
+    .toolbar,
+    .button,
+    .loading,
+    .panel-widget {
+        display: none !important;
+    }
+
+    .input-container input {
+        border: 0;
+    }
+
+    .panel {
+        position: initial;
+        max-width: 13.5em;
+        padding-top: 0;
     }
 }
